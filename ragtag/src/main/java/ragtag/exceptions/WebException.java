@@ -1,4 +1,4 @@
-package com.ragtag.exceptions;
+package ragtag.exceptions;
 
 /**
  *

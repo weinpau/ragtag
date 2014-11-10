@@ -1,4 +1,4 @@
-package com.ragtag;
+package ragtag;
 
 import java.util.Optional;
 

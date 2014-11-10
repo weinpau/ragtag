@@ -1,8 +1,8 @@
 package example;
 
-import com.ragtag.Response;
+import ragtag.Response;
 
-import static com.ragtag.Ragtag.*;
+import static ragtag.Ragtag.*;
 
 public class HelloWorld {
 
