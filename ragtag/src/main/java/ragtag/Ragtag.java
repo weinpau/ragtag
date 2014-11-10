@@ -22,40 +22,20 @@ public final class Ragtag {
     private Ragtag() {
     }
 
-    public static Router get(String path, Function<Request, Response> callback, MediaType... acceptTypes) {
-        return root.get(path, callback, acceptTypes);
-    }
-
     public static Router get(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
         return root.get(path, callback, acceptTypes);
-    }
-
-    public static Router post(String path, Function<Request, Response> callback, MediaType... acceptTypes) {
-        return root.post(path, callback, acceptTypes);
     }
 
     public static Router post(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
         return root.post(path, callback, acceptTypes);
     }
 
-    public static Router put(String path, Function<Request, Response> callback, MediaType... acceptTypes) {
-        return root.put(path, callback, acceptTypes);
-    }
-
     public static Router put(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
         return root.put(path, callback, acceptTypes);
     }
 
-    public static Router delete(String path, Function<Request, Response> callback, MediaType... acceptTypes) {
-        return root.delete(path, callback, acceptTypes);
-    }
-
     public static Router delete(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
         return root.delete(path, callback, acceptTypes);
-    }
-
-    public static Router all(String path, Function<Request, Response> callback) {
-        return root.all(path, callback);
     }
 
     public static Router all(String path, BiConsumer<Request, Response> callback) {
