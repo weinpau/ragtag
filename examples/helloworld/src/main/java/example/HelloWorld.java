@@ -7,7 +7,7 @@ import static ragtag.Ragtag.*;
 public class HelloWorld {
 
     public static void main(String[] args) {
-        get("/", req -> null);
+        get("/", req-> Response.ok("Hello World"));
     }
 
 }

@@ -1,5 +1,6 @@
 package ragtag;
 
+import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
@@ -15,7 +16,15 @@ public abstract class Router {
         return this;
     }
 
+    public Router get(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
+        return this;
+    }
+
     public Router post(String path, Function<Request, Response> callback, MediaType... acceptTypes) {
+        return this;
+    }
+
+    public Router post(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
         return this;
     }
 
@@ -23,15 +32,27 @@ public abstract class Router {
         return this;
     }
 
+    public Router put(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
+        return this;
+    }
+
     public Router delete(String path, Function<Request, Response> callback, MediaType... acceptTypes) {
         return this;
     }
 
-    public Router use(String path, Router route) {
+    public Router delete(String path, BiConsumer<Request, Response> callback, MediaType... acceptTypes) {
         return this;
     }
 
     public Router all(String path, Function<Request, Response> callback) {
+        return this;
+    }
+
+    public Router all(String path, BiConsumer<Request, Response> callback) {
+        return this;
+    }
+
+    public Router use(String path, Router route) {
         return this;
     }
 

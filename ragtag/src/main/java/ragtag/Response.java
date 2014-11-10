@@ -25,5 +25,34 @@ public interface Response {
     MediaType type();
 
     Response type(MediaType type);
+    
+    
+    public static Response ok() {
+        return null;
+    }
+
+    public static Response ok(Object body) {
+        return null;
+    }
+
+    public static Response created(Object body) {
+       return null;
+    }
+
+    public static Response notFound() {
+        return null;
+    }
+
+    public static Response serverError() {
+       return null;
+    }
+
+    public static Response redirect(String path) {
+        return null;
+    }
+
+    public static Response status(ResponseStatus responseStatus) {
+        return null;
+    }
 
 }
