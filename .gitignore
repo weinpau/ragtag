@@ -6,3 +6,6 @@
 #Gradle
 .gradle
 build
+
+#Netbeans
+/.nb-gradle/private/
