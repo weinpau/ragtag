@@ -1,0 +1,23 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.1'
+}
+
+subprojects {
+  apply plugin: "java"
+  group = "ragtag"
+  version = "0.1.0"
+
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+  repositories {
+    mavenCentral()
+  }
+}
+
+project(":examples:helloworld"){
+  dependencies {
+    compile project(":ragtag")
+  }
+}
